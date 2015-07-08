@@ -43,8 +43,8 @@
 var moves = {
   // Aggressor
   aggressor: function(gameData, helpers) {
-    // Here, we ask if your hero's health is below 30
-    if (gameData.activeHero.health <= 30){
+    // Here, we ask if your hero's health is below 20
+    if (gameData.activeHero.health <= 20){
       // If it is, head towards the nearest health well
       return helpers.findNearestHealthWell(gameData);
     } else {
